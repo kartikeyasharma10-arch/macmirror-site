@@ -23,6 +23,7 @@
     el.setAttribute("role", "dialog");
     el.setAttribute("aria-label", "Cookie consent");
     el.innerHTML = `
+      <span class="consent-emoji" aria-hidden="true">🍪</span>
       <p>We use <strong>Microsoft Clarity</strong> cookies to see how visitors use this site so we can improve it.
       No ads, no selling data. <a href="privacy.html#analytics">Learn more</a></p>
       <div class="consent-actions">
@@ -38,6 +39,7 @@
       else if (window.clarity) window.clarity("consent", false);
     });
     document.body.appendChild(el);
+    requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("show")));
   }
 
   const choice = read();

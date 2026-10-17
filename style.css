@@ -232,3 +232,9 @@ footer a { color: var(--muted); margin-right: 16px; }
 #consent p { margin: 0; color: var(--muted); line-height: 1.45; }
 #consent .consent-actions { display: flex; gap: 8px; flex-shrink: 0; }
 @media (max-width: 560px) { #consent { flex-direction: column; align-items: stretch; } #consent .consent-actions { justify-content: flex-end; } }
+
+#consent { transform: translateY(140%); opacity: 0; transition: transform .5s cubic-bezier(.2,1.2,.4,1), opacity .3s ease; }
+#consent.show { transform: none; opacity: 1; }
+#consent .consent-emoji { font-size: 30px; line-height: 1; flex-shrink: 0; }
+@media (prefers-reduced-motion: reduce) { #consent { transition: none; } }
+@media (max-width: 560px) { #consent .consent-emoji { display: none; } }
