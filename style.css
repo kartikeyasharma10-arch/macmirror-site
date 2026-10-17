@@ -120,3 +120,7 @@ footer a { color: var(--muted); margin-right: 16px; }
 .legal h2 { font-size: 22px; margin-top: 34px; }
 .legal p, .legal li { color: var(--muted); }
 .legal .updated { color: var(--muted); font-size: 14px; }
+
+.steps { padding-left: 22px; margin: 28px 0; }
+.steps li { margin-bottom: 14px; padding-left: 6px; }
+.steps li::marker { color: var(--accent); font-weight: 700; }
