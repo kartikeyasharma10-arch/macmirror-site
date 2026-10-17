@@ -216,3 +216,14 @@ footer a { color: var(--muted); margin-right: 16px; }
 .card.feature-call { display: flex; gap: 18px; align-items: flex-start; margin-bottom: 16px; border: 2px solid var(--accent); background: linear-gradient(135deg, var(--accent-soft), var(--card) 60%); }
 .card.feature-call .emoji { font-size: 34px; }
 .card.feature-call h3 { margin-top: 2px; font-size: 21px; }
+
+.tiers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; max-width: 860px; margin: 0 auto 18px; align-items: stretch; }
+.price.tier { max-width: none; margin: 0; text-align: left; position: relative; display: flex; flex-direction: column; }
+.price.tier h3 { margin: 0 0 8px; font-size: 22px; }
+.price.tier .amount { font-size: 52px; }
+.price.tier .tier-sub { color: var(--muted); margin: 6px 0 0; }
+.price.tier ul { flex: 1; }
+.price.tier .btn { justify-content: center; }
+.price.tier.featured { border: 2px solid var(--accent); background: linear-gradient(180deg, var(--accent-soft), var(--card) 45%); }
+.ribbon { position: absolute; top: -13px; right: 20px; background: var(--accent); color: var(--accent-ink); font-size: 12px; font-weight: 700; padding: 5px 12px; border-radius: 999px; }
+@media (max-width: 720px) { .tiers { grid-template-columns: 1fr; } }
