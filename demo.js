@@ -17,10 +17,10 @@
     click: "Click the icon to pin the mirror open. Click anywhere else to close it.",
     meeting: "Link your calendar and Mac Mirror pops open 2 minutes before every Zoom, Meet or Teams call, with a smile and a Join button.",
   };
-  const order = Object.keys(captions);
+  const order = ["meeting", "hover", "hold", "shortcut", "click"];
   const ICON = [88.5, 37]; // cursor tip on the icon, in % of the screen
 
-  let run = 0, mode = "hover", userPicked = false;
+  let run = 0, mode = "meeting", userPicked = false;
   const wait = (ms, id) => new Promise((ok, stop) => setTimeout(() => (id === run ? ok() : stop()), ms));
   const at = (x, y) => { cursor.style.left = x + "%"; cursor.style.top = y + "%"; };
   const set = (cls, on) => screen.classList.toggle(cls, on);

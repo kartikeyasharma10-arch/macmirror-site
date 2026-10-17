@@ -212,3 +212,7 @@ footer a { color: var(--muted); margin-right: 16px; }
 .specs { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
 .spec { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
 .spec b { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 4px; }
+
+.card.feature-call { display: flex; gap: 18px; align-items: flex-start; margin-bottom: 16px; border: 2px solid var(--accent); background: linear-gradient(135deg, var(--accent-soft), var(--card) 60%); }
+.card.feature-call .emoji { font-size: 34px; }
+.card.feature-call h3 { margin-top: 2px; font-size: 21px; }

@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mac Mirror: check your face before every meeting</title>
-  <meta name="description" content="A tiny floating mirror for your Mac. Hover, click or hold ⌘ to see yourself instantly before a call. One-time $5, no subscription.">
-  <meta property="og:title" content="Mac Mirror">
-  <meta property="og:description" content="Check your face before every meeting. Hover, click or hold ⌘. One-time $5.">
+  <title>Mac Mirror: look your best before every call</title>
+  <meta name="description" content="Mac Mirror pops open 2 minutes before your Zoom, Google Meet or Teams call, with a smile, a ring light and a Join button. Works with Google, Outlook and iCloud calendars. $5 once.">
+  <meta property="og:title" content="Mac Mirror: look your best before every call">
+  <meta property="og:description" content="A mirror that pops open before every Zoom, Meet or Teams call, with a smile and a Join button. $5 once.">
   <meta property="og:image" content="https://macmirror.me/assets/app-icon.png">
   <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="style.css">
@@ -29,18 +29,19 @@
   <main>
     <div class="wrap hero">
       <div>
-        <h1>Check your face <em>before</em> every meeting.</h1>
-        <p class="lead">A tiny mirror that floats on your Mac. Hover over it and your camera pops open, with a soft ring light. Spinach-in-teeth, solved.</p>
+        <h1>Look your best <em>before</em> every call.</h1>
+        <p class="lead">Mac Mirror pops open 2 minutes before your Zoom, Meet or Teams call, with a smile 😊, a soft ring light and a Join button. Need a check anytime? Just hover.</p>
         <div class="cta">
           <a class="btn" data-link="buy" href="#pricing">Buy Mac Mirror ($5)</a>
           <a class="btn ghost" href="install.html">Try free for 7 days</a>
         </div>
         <div class="badges">
+          <span class="badge">📅 Google · Outlook · iCloud</span>
+          <span class="badge">🎥 Zoom · Meet · Teams</span>
           <span class="badge">$5 once</span>
           <span class="badge">macOS 14+</span>
           <span class="badge">Apple Silicon &amp; Intel</span>
-          <span class="badge">3 MB</span>
-          <span class="badge">7-day free trial</span>
+                    <span class="badge">7-day free trial</span>
         </div>
       </div>
       <div class="demo" id="demo">
@@ -55,11 +56,11 @@
           <div class="keys"><kbd data-k="opt">⌥</kbd><kbd data-k="cmd">⌘<svg class="ring" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16"/></svg></kbd><kbd data-k="m">M</kbd></div>
         </div>
         <div class="demo-tabs" role="tablist" aria-label="Ways to open the mirror">
+          <button role="tab" data-mode="meeting">📅 Before a call</button>
           <button role="tab" data-mode="hover">Hover</button>
           <button role="tab" data-mode="hold">Hold ⌘</button>
           <button role="tab" data-mode="shortcut">⌥⌘M</button>
           <button role="tab" data-mode="click">Click</button>
-          <button role="tab" data-mode="meeting">Before a call</button>
         </div>
         <p class="demo-caption" aria-live="polite"></p>
       </div>
@@ -67,8 +68,15 @@
 
     <section id="how">
       <div class="wrap">
-        <h2>Four ways to open it. Zero ways to forget.</h2>
+        <h2>Opens itself before calls. Or whenever you want.</h2>
         <p class="sub">The mirror stays out of your way until you need it, and the camera turns off the moment it closes.</p>
+        <div class="card feature-call">
+          <div class="emoji">📅</div>
+          <div>
+            <h3>Before every call, automatically</h3>
+            <p>Link your Google, Outlook or iCloud calendar once. Two minutes before each Zoom, Meet or Teams call, your mirror pops open with a friendly nudge, a countdown and a one-click <strong>Join</strong>. No more joining with messy hair.</p>
+          </div>
+        </div>
         <div class="grid">
           <div class="card"><div class="emoji">🖱️</div><h3>Hover</h3><p>Rest your pointer on the floating icon. The mirror appears; move away and it's gone.</p></div>
           <div class="card"><div class="emoji">👆</div><h3>Click</h3><p>Click the icon to pin the mirror open while you fix your hair.</p></div>
@@ -112,6 +120,18 @@
 
         <div class="look">
           <div>
+            <h3>Pops open before every call <span class="badge" style="vertical-align:middle">New</span></h3>
+            <p>Link your calendar once and Mac Mirror opens itself a couple of minutes before each video call, with a cheerful nudge (“😊 Smile!”), a live countdown and a one-click <strong>Join</strong> button.</p>
+            <ul>
+              <li>Zoom, Google Meet, Teams, Webex, FaceTime &amp; Slack links</li>
+              <li>Link Google, Outlook / Microsoft 365, iCloud or Exchange calendars</li>
+              <li>Choose 1–10 minutes before, and which calendars to watch</li>
+            </ul>
+          </div>
+          <div class="look-img"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/screens/settings-meetings-dark.png"><img src="assets/screens/settings-meetings.png" alt="Mac Mirror Meetings settings: pop open before video calls and link your calendars" loading="lazy"></picture></div>
+        </div>
+        <div class="look">
+          <div>
             <h3>Open it your way</h3>
             <p>Hover to peek, click to pin, long-press <kbd>⌘</kbd> or hit <kbd>⌥⌘M</kbd>. It works in every app and every Space, even over full-screen video calls.</p>
             <ul>
@@ -147,18 +167,6 @@
             </ul>
           </div>
           <div class="look-img"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/screens/settings-mirror-dark.png"><img src="assets/screens/settings-mirror.png" alt="Mac Mirror Mirror settings: shape, size, zoom and ring light" loading="lazy"></picture></div>
-        </div>
-        <div class="look">
-          <div>
-            <h3>Pops open before every call <span class="badge" style="vertical-align:middle">New</span></h3>
-            <p>Link your calendar once and Mac Mirror opens itself a couple of minutes before each video call, with a cheerful nudge (“😊 Smile!”), a live countdown and a one-click <strong>Join</strong> button.</p>
-            <ul>
-              <li>Zoom, Google Meet, Teams, Webex, FaceTime &amp; Slack links</li>
-              <li>Link Google, Outlook / Microsoft 365, iCloud or Exchange calendars</li>
-              <li>Choose 1–10 minutes before, and which calendars to watch</li>
-            </ul>
-          </div>
-          <div class="look-img"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/screens/settings-meetings-dark.png"><img src="assets/screens/settings-meetings.png" alt="Mac Mirror Meetings settings: pop open before video calls and link your calendars" loading="lazy"></picture></div>
         </div>
         <p style="text-align:center"><a class="btn ghost" href="guide.html">Read the full guide →</a></p>
       </div>
