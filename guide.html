@@ -26,7 +26,7 @@
     <h1>Mac Mirror Guide</h1>
     <p class="lead">A tiny mirror that floats on your Mac. Here's everything it does and how to get the most out of it.</p>
     <div class="badges">
-      <span class="badge">v1.0.3</span>
+      <span class="badge">v1.1.0</span>
       <span class="badge">macOS 14+</span>
       <span class="badge">Apple Silicon &amp; Intel</span>
       <span class="badge">3 MB</span>
@@ -43,6 +43,7 @@
       <a href="#install">Installation</a>
       <a href="#quick-start">Quick start</a>
       <a href="#open">Opening the mirror</a>
+      <a href="#meetings">Meetings &amp; calendars</a>
       <a href="#icon">The floating icon</a>
       <a href="#mirror">The mirror</a>
       <a href="#settings">Settings, tab by tab</a>
@@ -60,6 +61,7 @@
         <ul class="ticks">
           <li><strong>Always one hover away.</strong> A small mirror icon floats on top of every app, on every desktop and over full-screen apps.</li>
           <li><strong>Four ways to open it:</strong> hover, click, long-press <kbd>⌘</kbd>, or press <kbd>⌥⌘M</kbd>.</li>
+          <li><strong>Pops open before every call:</strong> link your calendar and get a “😊 Smile!” mirror with a countdown and a Join button, 2 minutes before Zoom, Meet or Teams.</li>
           <li><strong>Built-in ring light</strong> that softly lights your face, from cool white to warm.</li>
           <li><strong>Make it yours:</strong> 5 icon styles, any frame color, any size, three mirror shapes and up to 2.5× zoom.</li>
           <li><strong>Any camera:</strong> built-in FaceTime camera, USB webcams, or your iPhone via Continuity Camera.</li>
@@ -74,7 +76,7 @@
           <li><strong>macOS 14 Sonoma or newer.</strong> Works on Sonoma, Sequoia and Tahoe.</li>
           <li><strong>Any Mac:</strong> Apple Silicon (M1–M5) or Intel.</li>
           <li><strong>A camera:</strong> built-in, external, or an iPhone with Continuity Camera.</li>
-          <li><strong>Permissions:</strong> Camera only. No Accessibility, Screen Recording or Input Monitoring needed.</li>
+          <li><strong>Permissions:</strong> Camera. Calendar is optional and only needed for meeting mode. No Accessibility, Screen Recording or Input Monitoring needed.</li>
         </ul>
       </section>
 
@@ -116,6 +118,27 @@
         <p class="note">Tip: the camera starts warming up while you hover, so the mirror is ready the moment it appears.</p>
       </section>
 
+      <section id="meetings">
+        <h2>Meetings &amp; calendars</h2>
+        <p>Mac Mirror can open itself shortly before your video calls, so you always join looking your best.</p>
+        <ol class="steps">
+          <li>Open <strong>Settings → Meetings</strong> and make sure <strong>Pop open before video calls</strong> is on.</li>
+          <li>Click <strong>Allow calendar access</strong>.</li>
+          <li>Under <strong>Link your calendars</strong>, click <strong>Link Google</strong>, <strong>Link Outlook / Microsoft 365</strong>, <strong>Link iCloud</strong> or <strong>Link Exchange</strong>. macOS opens Internet Accounts; sign in there once and turn on <strong>Calendars</strong>. Already see your calendar in Apple's Calendar app? You're done.</li>
+          <li>Pick which calendars to watch and how early to open (1–10 minutes). Click <strong>Preview it</strong> to see it.</li>
+        </ol>
+        <p>Before each call the mirror pops open with a friendly nudge (“😊 Smile!”, “✨ Looking good”, “😁 Quick teeth check”…), the meeting name, a live countdown and a <strong>Join</strong> button that opens the call.</p>
+        <table>
+          <thead><tr><th>Supported</th><th></th></tr></thead>
+          <tbody>
+            <tr><td><strong>Calendars</strong></td><td>Google, Outlook / Microsoft 365, iCloud, Exchange, and any calendar in Apple's Calendar app</td></tr>
+            <tr><td><strong>Video calls</strong></td><td>Zoom, Google Meet, Microsoft Teams, Webex, FaceTime, Slack huddles, Whereby, Around</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Skips all-day events, cancelled events and invites you declined. By default it only opens for events with a video-call link; turn that off to be nudged before every event. Your calendar is read on your Mac and never uploaded.</p>
+        <figure class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/screens/settings-meetings-dark.png"><img src="assets/screens/settings-meetings.png" alt="Mac Mirror Meetings settings" loading="lazy"></picture><figcaption>Settings → Meetings</figcaption></figure>
+      </section>
+
       <section id="icon">
         <h2>The floating icon</h2>
         <ul>
@@ -150,6 +173,8 @@
         <p>Pick a style, size, idle opacity and frame color. <a href="#icon">More above</a>.</p>
         <h3>Mirror</h3>
         <p>Shape, size, zoom, ring light, camera and mirroring. <a href="#mirror">More above</a>.</p>
+        <h3>Meetings</h3>
+        <p>Pop open before calls, link calendars, choose calendars and timing. <a href="#meetings">More above</a>.</p>
         <h3>License</h3>
         <p>See your trial status, buy, activate or deactivate your license.</p>
         <figure class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/screens/settings-license-dark.png"><img src="assets/screens/settings-license.png" alt="Mac Mirror License settings" loading="lazy"></picture><figcaption>Settings → License</figcaption></figure>
@@ -161,6 +186,7 @@
           <tbody>
             <tr><td><kbd>⌥⌘M</kbd></td><td>Open / close the mirror</td></tr>
             <tr><td>Hold <kbd>⌘</kbd></td><td>Open the mirror (configurable key and duration)</td></tr>
+            <tr><td>Before a call</td><td>Opens automatically with a countdown and Join button</td></tr>
             <tr><td>Hover icon</td><td>Peek: opens, closes when you move away</td></tr>
             <tr><td>Click icon</td><td>Pin the mirror open</td></tr>
             <tr><td>Drag icon</td><td>Move it anywhere</td></tr>
@@ -187,6 +213,7 @@
           <li>The camera feed is shown on your screen and <strong>nowhere else</strong>. Nothing is recorded, saved or uploaded.</li>
           <li>The camera <strong>only runs while the mirror is open</strong>, so the green camera light tells you exactly when.</li>
           <li><strong>No analytics, no tracking, no account.</strong></li>
+          <li><strong>Calendar (optional):</strong> read on your Mac to find upcoming calls. Never uploaded or shared.</li>
           <li>The only network request is checking your <strong>license key</strong> with our payment provider, Dodo Payments.</li>
           <li>Read the full <a href="privacy.html">privacy policy</a>.</li>
         </ul>
@@ -197,6 +224,7 @@
         <details><summary>“Apple could not verify Mac Mirror…”</summary><p>Click <strong>Done</strong>, then <strong>System Settings → Privacy &amp; Security → Open Anyway</strong>. Or install with the <a href="#install">one-line command</a>, which skips this entirely.</p></details>
         <details><summary>“Mac Mirror is damaged and can't be opened”</summary><p>You have an old download. Move it to the Trash and install the latest version from <a href="install.html">the install page</a>.</p></details>
         <details><summary>The mirror is black or says camera access is off</summary><p>Open <strong>System Settings → Privacy &amp; Security → Camera</strong> and switch on Mac Mirror. If you picked a specific camera in Settings → Mirror, make sure it's connected.</p></details>
+        <details><summary>The mirror doesn't open before my meetings</summary><p>Check <strong>Settings → Meetings</strong>: the toggle is on, calendar access says <strong>Allowed</strong>, and your calendar is ticked under “Calendars to watch”. Make sure the event has a Zoom/Meet/Teams link (or turn off “Only events with a video-call link”). If your calendar isn't listed, link the account with the <strong>Link</strong> buttons.</p></details>
         <details><summary>I can't find the floating icon</summary><p>Click the Mac Mirror icon in the menu bar → <strong>Show Floating Icon</strong>. If you hid both, open Mac Mirror again from Applications to bring up Settings.</p></details>
         <details><summary>Holding ⌘ doesn't open it</summary><p>Check Settings → General → <strong>Long-press a key</strong> isn't set to Off. Hold the key on its own without pressing anything else, for at least the “Hold for” time.</p></details>
         <details><summary>My license key doesn't work</summary><p>Copy it exactly from the email (no spaces). If it says it's active on 3 Macs, deactivate one first. Still stuck? Email <a href="mailto:support@macmirror.me">support@macmirror.me</a>.</p></details>
@@ -211,6 +239,7 @@
       <section id="changelog">
         <h2>Changelog</h2>
         <dl class="changelog">
+          <dt>1.1.0</dt><dd>Meeting mode: pops open before video calls with a countdown and Join button. Link Google, Outlook, iCloud and Exchange calendars.</dd>
           <dt>1.0.3</dt><dd>New drag-to-Applications installer window and a one-line installer.</dd>
           <dt>1.0.2</dt><dd>Fixed “Mac Mirror is damaged” on some Macs.</dd>
           <dt>1.0.1</dt><dd>Fixed the mirror not appearing when clicking the icon over full-screen apps.</dd>

@@ -15,6 +15,7 @@
     hold: "Hold ⌘ on its own for a moment, from any app. Hold it again (or click away) to close.",
     shortcut: "Press ⌥⌘M anywhere, even over full-screen apps, to toggle the mirror.",
     click: "Click the icon to pin the mirror open. Click anywhere else to close it.",
+    meeting: "Link your calendar and Mac Mirror pops open 2 minutes before every Zoom, Meet or Teams call, with a smile and a Join button.",
   };
   const order = Object.keys(captions);
   const ICON = [88.5, 37]; // cursor tip on the icon, in % of the screen
@@ -30,10 +31,26 @@
     cursor.classList.remove("press");
     cursor.style.transition = "none"; at(28, 78); void cursor.offsetWidth; cursor.style.transition = "";
     ring.classList.remove("fill");
+    if (count) count.textContent = "Starts in 2:00";
     root.querySelectorAll("kbd").forEach((k) => k.classList.remove("shown", "down"));
   }
 
+  const count = root.querySelector(".mb-count");
+
   const scenes = {
+    async meeting(id) {
+      await wait(400, id);
+      set("notify", true); await wait(1400, id);
+      set("notify", false); set("open", true); await wait(350, id);
+      set("banner", true);
+      for (let s = 120; s > 115; s--) {
+        count.textContent = `Starts in ${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
+        await wait(1000, id);
+      }
+      set("show-cursor", true); cursor.style.transition = "none"; at(40, 92); void cursor.offsetWidth; cursor.style.transition = "";
+      await wait(50, id); at(79, 74); await wait(950, id);
+      await press(id); set("banner", false); set("open", false); await wait(1000, id);
+    },
     async hover(id) {
       set("show-cursor", true); await wait(350, id);
       at(...ICON); await wait(950, id);

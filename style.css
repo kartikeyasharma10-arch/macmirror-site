@@ -90,6 +90,15 @@ nav .links a.btn { color: var(--accent-ink); }
 .screen .keys .ring { position: absolute; inset: -9px; width: calc(100% + 18px); height: calc(100% + 18px); transform: rotate(-90deg); pointer-events: none; }
 .screen .keys .ring circle { fill: none; stroke: var(--accent); stroke-width: 3; stroke-linecap: round; stroke-dasharray: 100.6; stroke-dashoffset: 100.6; }
 .screen .keys .ring.fill circle { stroke-dashoffset: 0; transition: stroke-dashoffset .6s linear; }
+.screen .notif { position: absolute; top: 9%; right: 3%; width: 38%; display: flex; gap: 8px; align-items: center; padding: 8px 10px; border-radius: 12px; background: rgba(255,255,255,.92); box-shadow: 0 10px 24px -10px rgba(0,0,0,.35); font-size: clamp(9px, 1.3vw, 13px); line-height: 1.3; color: #2a1f2d; opacity: 0; transform: translateX(30%); transition: opacity .3s, transform .45s cubic-bezier(.2,1.2,.4,1); z-index: 6; }
+.screen .notif .notif-ico { font-size: 1.6em; }
+.screen.notify .notif { opacity: 1; transform: none; }
+.screen .mbanner { position: absolute; right: 12%; top: 71%; width: 54%; display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 999px; background: rgba(255,255,255,.95); box-shadow: 0 10px 24px -10px rgba(0,0,0,.4); border: 1px solid rgba(224,81,127,.35); font-size: clamp(8px, 1.15vw, 12px); line-height: 1.25; color: #2a1f2d; opacity: 0; transform: translateY(14px) scale(.95); transition: opacity .3s, transform .5s cubic-bezier(.2,1.4,.4,1); z-index: 3; }
+.screen .mbanner .mb-emoji { font-size: 1.7em; width: 1.9em; height: 1.9em; display: grid; place-items: center; border-radius: 50%; background: #ffe4ec; }
+.screen .mbanner .mb-text { flex: 1; min-width: 0; }
+.screen .mbanner .mb-count { color: #7a6a7c; font-variant-numeric: tabular-nums; }
+.screen .mbanner .mb-join { background: #e0517f; color: #fff; font-weight: 700; padding: .55em .9em; border-radius: 999px; white-space: nowrap; }
+.screen.banner .mbanner { opacity: 1; transform: none; }
 .demo-tabs { display: flex; justify-content: center; gap: 8px; margin-top: 16px; flex-wrap: wrap; }
 .demo-tabs button { font: 600 14px/1 inherit; font-family: inherit; padding: 9px 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--text); cursor: pointer; }
 .demo-tabs button[aria-selected="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }

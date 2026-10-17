@@ -50,6 +50,8 @@
           <div class="mirror"><div class="face"></div><span class="close">✕</span></div>
           <img class="icon" src="assets/vanity.png" alt="">
           <svg class="cursor" viewBox="0 0 24 24" width="26" height="26"><path d="M4 2l15 9.5-6.6 1.4 3.9 7.6-3 1.5-3.9-7.6L4 19z" fill="#111" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <div class="notif"><span class="notif-ico">📅</span><span><b>Design review</b><br>Google Meet · in 2 min</span></div>
+          <div class="mbanner"><span class="mb-emoji">😊</span><span class="mb-text"><b>Smile! Design review</b><br><span class="mb-count">Starts in 2:00</span></span><span class="mb-join">Join Meet</span></div>
           <div class="keys"><kbd data-k="opt">⌥</kbd><kbd data-k="cmd">⌘<svg class="ring" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16"/></svg></kbd><kbd data-k="m">M</kbd></div>
         </div>
         <div class="demo-tabs" role="tablist" aria-label="Ways to open the mirror">
@@ -57,6 +59,7 @@
           <button role="tab" data-mode="hold">Hold ⌘</button>
           <button role="tab" data-mode="shortcut">⌥⌘M</button>
           <button role="tab" data-mode="click">Click</button>
+          <button role="tab" data-mode="meeting">Before a call</button>
         </div>
         <p class="demo-caption" aria-live="polite"></p>
       </div>
@@ -145,6 +148,18 @@
           </div>
           <div class="look-img"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/screens/settings-mirror-dark.png"><img src="assets/screens/settings-mirror.png" alt="Mac Mirror Mirror settings: shape, size, zoom and ring light" loading="lazy"></picture></div>
         </div>
+        <div class="look">
+          <div>
+            <h3>Pops open before every call <span class="badge" style="vertical-align:middle">New</span></h3>
+            <p>Link your calendar once and Mac Mirror opens itself a couple of minutes before each video call, with a cheerful nudge (“😊 Smile!”), a live countdown and a one-click <strong>Join</strong> button.</p>
+            <ul>
+              <li>Zoom, Google Meet, Teams, Webex, FaceTime &amp; Slack links</li>
+              <li>Link Google, Outlook / Microsoft 365, iCloud or Exchange calendars</li>
+              <li>Choose 1–10 minutes before, and which calendars to watch</li>
+            </ul>
+          </div>
+          <div class="look-img"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/screens/settings-meetings-dark.png"><img src="assets/screens/settings-meetings.png" alt="Mac Mirror Meetings settings: pop open before video calls and link your calendars" loading="lazy"></picture></div>
+        </div>
         <p style="text-align:center"><a class="btn ghost" href="guide.html">Read the full guide →</a></p>
       </div>
     </section>
@@ -157,7 +172,9 @@
           <div class="spec"><b>Works on</b>macOS 14 Sonoma, 15 Sequoia &amp; 26 Tahoe</div>
           <div class="spec"><b>Macs</b>Apple Silicon and Intel (universal app)</div>
           <div class="spec"><b>Cameras</b>Built-in, USB webcams, iPhone Continuity Camera</div>
-          <div class="spec"><b>Permissions</b>Camera only. No Accessibility or Screen Recording</div>
+          <div class="spec"><b>Permissions</b>Camera; Calendar is optional (for meeting mode). No Accessibility or Screen Recording</div>
+          <div class="spec"><b>Calendars</b>Google, Outlook / Microsoft 365, iCloud, Exchange</div>
+          <div class="spec"><b>Video calls</b>Zoom, Google Meet, Teams, Webex, FaceTime, Slack</div>
           <div class="spec"><b>Size</b>3 MB download, near-zero CPU when idle</div>
           <div class="spec"><b>Privacy</b>No account, no analytics; video never leaves your Mac</div>
           <div class="spec"><b>License</b>$5 once, up to 3 Macs, all 1.x updates</div>
@@ -196,6 +213,7 @@
         <details><summary>macOS says it can’t open Mac Mirror. What do I do?</summary><p>Mac Mirror is sold directly, not through the App Store, so macOS asks you to confirm it the first time. Open <strong>System Settings → Privacy &amp; Security</strong>, scroll down and click <strong>Open Anyway</strong> next to Mac Mirror. You only need to do this once. <a href="install.html">Step-by-step guide</a>.</p></details>
         <details><summary>How do I unlock it after buying?</summary><p>Your license key arrives by email right after checkout. Open Mac Mirror → Settings → License, paste it in, and you're done.</p></details>
         <details><summary>Can I get a refund?</summary><p>Yes. Email us within 14 days of purchase for a full refund. See the <a href="refund.html">refund policy</a>.</p></details>
+        <details><summary>Does it work with Google Calendar and Outlook?</summary><p>Yes. Mac Mirror reads every calendar on your Mac, including Google, Outlook / Microsoft 365, iCloud and Exchange. Link the account once (Settings → Meetings → Link your calendars) and Mac Mirror pops open before each Zoom, Meet or Teams call. Your calendar never leaves your Mac.</p></details>
         <details><summary>Where can I learn everything it does?</summary><p>The <a href="guide.html">Mac Mirror Guide</a> covers every feature, setting, shortcut and fix.</p></details>
         <details><summary>Does holding ⌘ interfere with shortcuts like ⌘C?</summary><p>No. The mirror only opens when you hold the key on its own; pressing any other key or clicking cancels it. You can change the key or turn it off in Settings.</p></details>
       </div>
