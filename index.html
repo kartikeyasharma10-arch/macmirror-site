@@ -43,11 +43,22 @@
           <span class="badge">7-day free trial</span>
         </div>
       </div>
-      <div class="screen" aria-label="Illustration: the Mac Mirror icon floating on a desktop with a round mirror open beside it">
-        <div class="menubar"></div>
-        <div class="window"><div class="row"></div><div class="row"></div><div class="row"></div><div class="row" style="width:45%"></div></div>
-        <div class="mirror"><div class="face"></div></div>
-        <img class="icon" src="assets/vanity.png" alt="">
+      <div class="demo" id="demo">
+        <div class="screen" aria-hidden="true">
+          <div class="menubar"></div>
+          <div class="window"><div class="row"></div><div class="row"></div><div class="row"></div><div class="row" style="width:45%"></div></div>
+          <div class="mirror"><div class="face"></div><span class="close">✕</span></div>
+          <img class="icon" src="assets/vanity.png" alt="">
+          <svg class="cursor" viewBox="0 0 24 24" width="26" height="26"><path d="M4 2l15 9.5-6.6 1.4 3.9 7.6-3 1.5-3.9-7.6L4 19z" fill="#111" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <div class="keys"><kbd data-k="opt">⌥</kbd><kbd data-k="cmd">⌘<svg class="ring" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16"/></svg></kbd><kbd data-k="m">M</kbd></div>
+        </div>
+        <div class="demo-tabs" role="tablist" aria-label="Ways to open the mirror">
+          <button role="tab" data-mode="hover">Hover</button>
+          <button role="tab" data-mode="hold">Hold ⌘</button>
+          <button role="tab" data-mode="shortcut">⌥⌘M</button>
+          <button role="tab" data-mode="click">Click</button>
+        </div>
+        <p class="demo-caption" aria-live="polite"></p>
       </div>
     </div>
 
@@ -106,7 +117,7 @@
               <li>Launch at login, hide the icon, or live in the menu bar</li>
             </ul>
           </div>
-          <div class="look-img"><img src="assets/screens/settings-general.png" alt="Mac Mirror General settings: hover, click, long-press key and shortcut options" loading="lazy"></div>
+          <div class="look-img"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/screens/settings-general-dark.png"><img src="assets/screens/settings-general.png" alt="Mac Mirror General settings: hover, click, long-press key and shortcut options" loading="lazy"></picture></div>
         </div>
 
         <div class="look">
@@ -119,7 +130,7 @@
               <li>Drag it anywhere; it remembers its spot</li>
             </ul>
           </div>
-          <div class="look-img"><img src="assets/screens/settings-appearance.png" alt="Mac Mirror Icon settings with five styles" loading="lazy"></div>
+          <div class="look-img"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/screens/settings-appearance-dark.png"><img src="assets/screens/settings-appearance.png" alt="Mac Mirror Icon settings with five styles" loading="lazy"></picture></div>
         </div>
 
         <div class="look">
@@ -132,7 +143,7 @@
               <li>The camera runs only while the mirror is open</li>
             </ul>
           </div>
-          <div class="look-img"><img src="assets/screens/settings-mirror.png" alt="Mac Mirror Mirror settings: shape, size, zoom and ring light" loading="lazy"></div>
+          <div class="look-img"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/screens/settings-mirror-dark.png"><img src="assets/screens/settings-mirror.png" alt="Mac Mirror Mirror settings: shape, size, zoom and ring light" loading="lazy"></picture></div>
         </div>
         <p style="text-align:center"><a class="btn ghost" href="guide.html">Read the full guide →</a></p>
       </div>
@@ -199,5 +210,6 @@
   </footer>
 
   <script src="links.js"></script>
+  <script src="demo.js"></script>
 </body>
 </html>
