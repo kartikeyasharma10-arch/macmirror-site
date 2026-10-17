@@ -227,3 +227,8 @@ footer a { color: var(--muted); margin-right: 16px; }
 .price.tier.featured { border: 2px solid var(--accent); background: linear-gradient(180deg, var(--accent-soft), var(--card) 45%); }
 .ribbon { position: absolute; top: -13px; right: 20px; background: var(--accent); color: var(--accent-ink); font-size: 12px; font-weight: 700; padding: 5px 12px; border-radius: 999px; }
 @media (max-width: 720px) { .tiers { grid-template-columns: 1fr; } }
+
+#consent { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 50; max-width: 620px; margin: 0 auto; display: flex; gap: 16px; align-items: center; padding: 14px 16px; background: var(--card); color: var(--text); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); font-size: 14px; }
+#consent p { margin: 0; color: var(--muted); line-height: 1.45; }
+#consent .consent-actions { display: flex; gap: 8px; flex-shrink: 0; }
+@media (max-width: 560px) { #consent { flex-direction: column; align-items: stretch; } #consent .consent-actions { justify-content: flex-end; } }
