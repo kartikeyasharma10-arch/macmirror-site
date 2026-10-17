@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mac Mirror Guide</title>
+  <meta name="description" content="Everything about Mac Mirror: requirements, installing, opening the mirror, every setting, shortcuts, privacy, licensing and troubleshooting.">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a class="brand" href="/"><img src="assets/app-icon.png" alt="">Mac Mirror</a>
+      <div class="links">
+        <a href="/#how">How it works</a>
+        <a href="guide.html" aria-current="page">Guide</a>
+        <a href="https://www.instagram.com/macmirror.me/" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn small" data-link="buy" href="/#pricing">Buy for $5</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="guide-hero wrap">
+    <img src="assets/app-icon.png" alt="" width="96" height="96">
+    <h1>Mac Mirror Guide</h1>
+    <p class="lead">A tiny mirror that floats on your Mac. Here's everything it does and how to get the most out of it.</p>
+    <div class="badges">
+      <span class="badge">v1.0.3</span>
+      <span class="badge">macOS 14+</span>
+      <span class="badge">Apple Silicon &amp; Intel</span>
+      <span class="badge">3 MB</span>
+      <span class="badge">No account</span>
+      <span class="badge">Video stays on your Mac</span>
+    </div>
+  </header>
+
+  <div class="wrap guide">
+    <aside class="toc" aria-label="Contents">
+      <strong>On this page</strong>
+      <a href="#highlights">Highlights</a>
+      <a href="#requirements">Requirements</a>
+      <a href="#install">Installation</a>
+      <a href="#quick-start">Quick start</a>
+      <a href="#open">Opening the mirror</a>
+      <a href="#icon">The floating icon</a>
+      <a href="#mirror">The mirror</a>
+      <a href="#settings">Settings, tab by tab</a>
+      <a href="#shortcuts">Shortcuts &amp; gestures</a>
+      <a href="#license">Trial &amp; license</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#troubleshooting">Troubleshooting</a>
+      <a href="#uninstall">Uninstall</a>
+      <a href="#changelog">Changelog</a>
+    </aside>
+
+    <article class="doc">
+      <section id="highlights">
+        <h2>Highlights</h2>
+        <ul class="ticks">
+          <li><strong>Always one hover away.</strong> A small mirror icon floats on top of every app, on every desktop and over full-screen apps.</li>
+          <li><strong>Four ways to open it:</strong> hover, click, long-press <kbd>⌘</kbd>, or press <kbd>⌥⌘M</kbd>.</li>
+          <li><strong>Built-in ring light</strong> that softly lights your face, from cool white to warm.</li>
+          <li><strong>Make it yours:</strong> 5 icon styles, any frame color, any size, three mirror shapes and up to 2.5× zoom.</li>
+          <li><strong>Any camera:</strong> built-in FaceTime camera, USB webcams, or your iPhone via Continuity Camera.</li>
+          <li><strong>Private by design:</strong> the camera only runs while the mirror is open, and video never leaves your Mac.</li>
+          <li><strong>Light:</strong> a 3 MB native Swift app that uses no CPU while it's idle.</li>
+        </ul>
+      </section>
+
+      <section id="requirements">
+        <h2>Requirements</h2>
+        <ul>
+          <li><strong>macOS 14 Sonoma or newer.</strong> Works on Sonoma, Sequoia and Tahoe.</li>
+          <li><strong>Any Mac:</strong> Apple Silicon (M1–M5) or Intel.</li>
+          <li><strong>A camera:</strong> built-in, external, or an iPhone with Continuity Camera.</li>
+          <li><strong>Permissions:</strong> Camera only. No Accessibility, Screen Recording or Input Monitoring needed.</li>
+        </ul>
+      </section>
+
+      <section id="install">
+        <h2>Installation</h2>
+        <h3>Option 1: one command (recommended)</h3>
+        <p>Open <strong>Terminal</strong> (<kbd>⌘</kbd> Space → “Terminal”), paste this and press Return:</p>
+        <div class="cmd"><code>curl -fsSL https://macmirror.me/install.sh | bash</code></div>
+        <p>It downloads the latest version into Applications and opens it. No security pop-ups. <a href="install.sh" target="_blank">Read the script</a>.</p>
+        <h3>Option 2: DMG</h3>
+        <ol>
+          <li><a data-link="download" href="install.html">Download MacMirror.dmg</a> and open it.</li>
+          <li>Drag <strong>Mac Mirror</strong> onto the <strong>Applications</strong> folder.</li>
+          <li>Open it from Applications. On first launch, macOS says it “could not verify” the app, because Mac Mirror is sold directly rather than through the App Store. Click <strong>Done</strong>, then go to <strong>System Settings → Privacy &amp; Security</strong> and click <strong>Open Anyway</strong>.</li>
+        </ol>
+      </section>
+
+      <section id="quick-start">
+        <h2>Quick start</h2>
+        <ol class="steps">
+          <li>Click <strong>Allow</strong> when Mac Mirror asks for the camera.</li>
+          <li>Find the <strong>floating mirror icon</strong> on the right edge of your screen. Drag it anywhere you like.</li>
+          <li><strong>Hover</strong> over it. Your mirror pops open. Move away and it closes.</li>
+          <li>Open <strong>Settings</strong> from the menu-bar icon (or right-click the floating icon) to choose your style.</li>
+        </ol>
+      </section>
+
+      <section id="open">
+        <h2>Opening the mirror</h2>
+        <table>
+          <thead><tr><th>Action</th><th>What happens</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Hover</strong> over the icon</td><td>Opens after a short delay (adjustable 0.1–1.5 s). Closes when your pointer leaves the icon and the mirror.</td></tr>
+            <tr><td><strong>Click</strong> the icon</td><td>Opens and <em>pins</em> the mirror. Clicking anywhere else, clicking the icon again or pressing <kbd>⌥⌘M</kbd> closes it.</td></tr>
+            <tr><td><strong>Long-press <kbd>⌘</kbd></strong></td><td>Hold Command on its own (0.3–1.5 s, adjustable). Pressing any other key or clicking cancels it, so <kbd>⌘C</kbd>, <kbd>⌘Tab</kbd> and friends work as normal. You can switch the key to <kbd>⌥</kbd> or <kbd>⌃</kbd>, turn it off, or make the mirror close when you let go.</td></tr>
+            <tr><td><strong><kbd>⌥⌘M</kbd></strong></td><td>Toggles the mirror from any app, even with the floating icon hidden.</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Tip: the camera starts warming up while you hover, so the mirror is ready the moment it appears.</p>
+      </section>
+
+      <section id="icon">
+        <h2>The floating icon</h2>
+        <ul>
+          <li><strong>Move it:</strong> drag it anywhere. It remembers its spot and stays on screen.</li>
+          <li><strong>Right-click it</strong> for Open Mirror, Hide Floating Icon, Settings and Quit.</li>
+          <li><strong>Styles:</strong> Vanity (rose hand mirror), Classic (silver), Barber (gunmetal), Midnight (navy &amp; gold) and Lens (camera lens), plus any custom frame color.</li>
+          <li><strong>Size &amp; opacity:</strong> 36–110 pt, and how see-through it is when you're not using it.</li>
+          <li><strong>Hide it</strong> if you only use shortcuts. Mac Mirror stays in the menu bar.</li>
+        </ul>
+        <figure class="shot"><img src="assets/screens/settings-appearance.png" alt="Mac Mirror Icon settings: five icon styles, size, idle opacity and custom frame color" loading="lazy"><figcaption>Settings → Icon</figcaption></figure>
+      </section>
+
+      <section id="mirror">
+        <h2>The mirror</h2>
+        <ul>
+          <li><strong>Shapes:</strong> Circle, Landscape or Portrait.</li>
+          <li><strong>Size:</strong> 180–520 pt. <strong>Zoom:</strong> 1×–2.5× for a closer look.</li>
+          <li><strong>Ring light:</strong> a glowing ring that lights your face. Adjust warmth (cool → warm) and thickness.</li>
+          <li><strong>Mirror image:</strong> flipped like a real mirror by default. Turn it off to see what others see on a call.</li>
+          <li><strong>Camera:</strong> pick the built-in camera, an external webcam or your iPhone.</li>
+          <li><strong>Close button</strong> appears when you hover over the mirror.</li>
+        </ul>
+        <figure class="shot"><img src="assets/screens/settings-mirror.png" alt="Mac Mirror Mirror settings: shape, size, zoom, ring light, camera and mirroring" loading="lazy"><figcaption>Settings → Mirror</figcaption></figure>
+      </section>
+
+      <section id="settings">
+        <h2>Settings, tab by tab</h2>
+        <h3>General</h3>
+        <p>Choose how the mirror opens (hover, click, long-press key, delays), show or hide the floating icon and the menu-bar icon, launch at login, and check camera access.</p>
+        <figure class="shot"><img src="assets/screens/settings-general.png" alt="Mac Mirror General settings" loading="lazy"><figcaption>Settings → General</figcaption></figure>
+        <h3>Icon</h3>
+        <p>Pick a style, size, idle opacity and frame color. <a href="#icon">More above</a>.</p>
+        <h3>Mirror</h3>
+        <p>Shape, size, zoom, ring light, camera and mirroring. <a href="#mirror">More above</a>.</p>
+        <h3>License</h3>
+        <p>See your trial status, buy, activate or deactivate your license.</p>
+        <figure class="shot"><img src="assets/screens/settings-license.png" alt="Mac Mirror License settings" loading="lazy"><figcaption>Settings → License</figcaption></figure>
+      </section>
+
+      <section id="shortcuts">
+        <h2>Shortcuts &amp; gestures</h2>
+        <table>
+          <tbody>
+            <tr><td><kbd>⌥⌘M</kbd></td><td>Open / close the mirror</td></tr>
+            <tr><td>Hold <kbd>⌘</kbd></td><td>Open the mirror (configurable key and duration)</td></tr>
+            <tr><td>Hover icon</td><td>Peek: opens, closes when you move away</td></tr>
+            <tr><td>Click icon</td><td>Pin the mirror open</td></tr>
+            <tr><td>Drag icon</td><td>Move it anywhere</td></tr>
+            <tr><td>Right-click icon</td><td>Quick menu</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="license">
+        <h2>Trial &amp; license</h2>
+        <ul>
+          <li><strong>7-day free trial</strong> with every feature. No account, no card.</li>
+          <li><strong>$5 once.</strong> Lifetime license, all 1.x updates, use it on up to <strong>3 Macs</strong>.</li>
+          <li>Your <strong>license key arrives by email</strong> right after checkout. Paste it into <strong>Settings → License → Activate</strong>.</li>
+          <li><strong>New Mac?</strong> Click “Deactivate on this Mac” first to free a slot, then activate on the new one.</li>
+          <li>Once activated, Mac Mirror keeps working offline.</li>
+          <li><strong>14-day money-back guarantee.</strong> See the <a href="refund.html">refund policy</a>.</li>
+        </ul>
+      </section>
+
+      <section id="privacy">
+        <h2>Privacy</h2>
+        <ul>
+          <li>The camera feed is shown on your screen and <strong>nowhere else</strong>. Nothing is recorded, saved or uploaded.</li>
+          <li>The camera <strong>only runs while the mirror is open</strong>, so the green camera light tells you exactly when.</li>
+          <li><strong>No analytics, no tracking, no account.</strong></li>
+          <li>The only network request is checking your <strong>license key</strong> with our payment provider, Dodo Payments.</li>
+          <li>Read the full <a href="privacy.html">privacy policy</a>.</li>
+        </ul>
+      </section>
+
+      <section id="troubleshooting">
+        <h2>Troubleshooting</h2>
+        <details><summary>“Apple could not verify Mac Mirror…”</summary><p>Click <strong>Done</strong>, then <strong>System Settings → Privacy &amp; Security → Open Anyway</strong>. Or install with the <a href="#install">one-line command</a>, which skips this entirely.</p></details>
+        <details><summary>“Mac Mirror is damaged and can't be opened”</summary><p>You have an old download. Move it to the Trash and install the latest version from <a href="install.html">the install page</a>.</p></details>
+        <details><summary>The mirror is black or says camera access is off</summary><p>Open <strong>System Settings → Privacy &amp; Security → Camera</strong> and switch on Mac Mirror. If you picked a specific camera in Settings → Mirror, make sure it's connected.</p></details>
+        <details><summary>I can't find the floating icon</summary><p>Click the Mac Mirror icon in the menu bar → <strong>Show Floating Icon</strong>. If you hid both, open Mac Mirror again from Applications to bring up Settings.</p></details>
+        <details><summary>Holding ⌘ doesn't open it</summary><p>Check Settings → General → <strong>Long-press a key</strong> isn't set to Off. Hold the key on its own without pressing anything else, for at least the “Hold for” time.</p></details>
+        <details><summary>My license key doesn't work</summary><p>Copy it exactly from the email (no spaces). If it says it's active on 3 Macs, deactivate one first. Still stuck? Email <a href="mailto:support@macmirror.me">support@macmirror.me</a>.</p></details>
+      </section>
+
+      <section id="uninstall">
+        <h2>Uninstall</h2>
+        <p>Quit Mac Mirror from the menu-bar icon, drag it from Applications to the Trash. To also remove your settings, run:</p>
+        <div class="cmd"><code>defaults delete com.macmirror.app</code></div>
+      </section>
+
+      <section id="changelog">
+        <h2>Changelog</h2>
+        <dl class="changelog">
+          <dt>1.0.3</dt><dd>New drag-to-Applications installer window and a one-line installer.</dd>
+          <dt>1.0.2</dt><dd>Fixed “Mac Mirror is damaged” on some Macs.</dd>
+          <dt>1.0.1</dt><dd>Fixed the mirror not appearing when clicking the icon over full-screen apps.</dd>
+          <dt>1.0.0</dt><dd>First release.</dd>
+        </dl>
+      </section>
+
+      <p class="note">Built with Swift, SwiftUI and AVFoundation. Payments by Dodo Payments. Questions? <a href="mailto:support@macmirror.me">support@macmirror.me</a></p>
+    </article>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <div>© <span id="year">2026</span> Mac Mirror · <a href="mailto:support@macmirror.me">support@macmirror.me</a></div>
+      <div><a href="guide.html">Guide</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a><a href="https://www.instagram.com/macmirror.me/" target="_blank" rel="noopener">Instagram</a></div>
+    </div>
+  </footer>
+  <script src="links.js"></script>
+</body>
+</html>

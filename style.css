@@ -128,3 +128,62 @@ footer a { color: var(--muted); margin-right: 16px; }
 .card.quick { border: 2px solid var(--accent); margin: 28px 0 36px; }
 .cmd { display: flex; gap: 10px; align-items: center; background: var(--accent-soft); border-radius: 12px; padding: 10px 10px 10px 14px; margin: 12px 0; }
 .cmd code { flex: 1; font: 600 14px ui-monospace, SFMono-Regular, Menlo, monospace; overflow-x: auto; white-space: nowrap; }
+
+/* Badges */
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.guide-hero .badges { justify-content: center; }
+.badge { font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); color: var(--muted); }
+
+/* Guide */
+.guide-hero { text-align: center; padding: 56px 20px 24px; }
+.guide-hero img { margin: 0 auto 14px; width: 96px; height: 96px; }
+.guide-hero h1 { font-size: clamp(34px, 5vw, 48px); letter-spacing: -0.03em; margin: 0 0 8px; }
+.guide-hero .lead { color: var(--muted); font-size: 19px; margin: 0 auto; max-width: 52ch; }
+.guide { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 48px; padding-top: 24px; padding-bottom: 64px; }
+.toc { position: sticky; top: 84px; align-self: start; display: flex; flex-direction: column; gap: 2px; font-size: 14px; }
+.toc strong { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 8px; }
+.toc a { color: var(--muted); text-decoration: none; padding: 5px 10px; border-radius: 8px; border-left: 2px solid transparent; }
+.toc a:hover { color: var(--text); background: var(--accent-soft); }
+.doc { max-width: 760px; }
+.doc section { padding: 8px 0 26px; border-bottom: 1px solid var(--line); scroll-margin-top: 80px; }
+.doc section:last-of-type { border-bottom: 0; }
+.doc h2 { font-size: 28px; margin: 22px 0 12px; }
+.doc h3 { font-size: 19px; margin: 22px 0 6px; }
+.doc p, .doc li, .doc td, .doc dd { color: var(--muted); }
+.doc strong, .doc td strong { color: var(--text); }
+.doc li { margin-bottom: 8px; }
+.doc ul.ticks { list-style: none; padding: 0; }
+.doc ul.ticks li { padding-left: 28px; position: relative; }
+.doc ul.ticks li::before { content: "✓"; position: absolute; left: 4px; color: var(--accent); font-weight: 700; }
+.doc table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; }
+.doc th, .doc td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.doc th { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.doc td:first-child { white-space: nowrap; }
+.doc details { margin-bottom: 8px; }
+.note { font-size: 15px; color: var(--muted); background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+.shot { margin: 18px 0 8px; }
+.shot img { width: 100%; max-width: 620px; border-radius: 14px; box-shadow: var(--shadow); border: 1px solid var(--line); }
+.shot figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; }
+.changelog { display: grid; grid-template-columns: 70px 1fr; gap: 8px 16px; }
+.changelog dt { font-weight: 700; }
+.changelog dd { margin: 0; }
+@media (max-width: 860px) {
+  .guide { grid-template-columns: 1fr; gap: 8px; }
+  .toc { position: static; flex-direction: row; flex-wrap: wrap; gap: 6px; }
+  .toc strong { width: 100%; margin-bottom: 2px; }
+  .toc a { border: 1px solid var(--line); padding: 4px 10px; font-size: 13px; }
+  .doc td:first-child { white-space: normal; }
+}
+
+/* Homepage: closer look */
+.look { display: grid; grid-template-columns: 1fr 1.1fr; gap: 48px; align-items: center; margin-bottom: 64px; }
+.look:nth-child(even) .look-img { order: -1; }
+.look h3 { font-size: 28px; letter-spacing: -0.02em; margin: 0 0 10px; }
+.look p { color: var(--muted); margin: 0 0 12px; }
+.look ul { color: var(--muted); padding-left: 20px; margin: 0; }
+.look li { margin-bottom: 6px; }
+.look-img img { width: 100%; border-radius: 16px; box-shadow: var(--shadow); border: 1px solid var(--line); }
+@media (max-width: 860px) { .look { grid-template-columns: 1fr; gap: 20px; } .look:nth-child(even) .look-img { order: 0; } }
+.specs { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+.spec { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
+.spec b { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 4px; }
