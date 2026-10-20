@@ -1,7 +1,7 @@
 // The only two links to update when launching. Empty = buttons scroll to the pricing card.
 const LINKS = {
-  buy: "https://test.checkout.dodopayments.com/buy/pdt_0NpwPKD7hzVP7glohdWiZ?quantity=1&redirect_url=https://macmirror.me/thanks.html",      // Dodo Payments checkout link, e.g. "https://checkout.dodopayments.com/buy/pdt_xxx?quantity=1"
-  buyPlus: "https://test.checkout.dodopayments.com/buy/pdt_0NpxCPhjLfpQbA2v4ZgG3?quantity=1&redirect_url=https://macmirror.me/thanks.html",
+  buy: "https://checkout.dodopayments.com/buy/pdt_0NqA4jbBv6VA9dx8M3gNc?quantity=1&redirect_url=https://macmirror.me/thanks.html",      // Dodo Payments checkout link, e.g. "https://checkout.dodopayments.com/buy/pdt_xxx?quantity=1"
+  buyPlus: "https://checkout.dodopayments.com/buy/pdt_0NqA4mGy89ItVOwRwrFFd?quantity=1&redirect_url=https://macmirror.me/thanks.html",
   download: "https://github.com/kartikeyasharma10-arch/macmirror-site/releases/latest/download/MacMirror.dmg", // e.g. "https://github.com/kartikeyasharma10-arch/macmirror-site/releases/latest/download/MacMirror.dmg"
 };
 
