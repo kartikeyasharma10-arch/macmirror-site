@@ -238,3 +238,16 @@ footer a { color: var(--muted); margin-right: 16px; }
 #consent .consent-emoji { font-size: 30px; line-height: 1; flex-shrink: 0; }
 @media (prefers-reduced-motion: reduce) { #consent { transition: none; } }
 @media (max-width: 560px) { #consent .consent-emoji { display: none; } }
+
+/* Pitch video (YouTube loads only after you press play) */
+.video-section { padding-top: 24px; text-align: center; }
+.video-section .sub { margin-left: auto; margin-right: auto; }
+.video-facade { position: relative; display: block; width: 100%; max-width: 920px; margin: 24px auto 0; padding: 0; border: 0; border-radius: 20px; overflow: hidden; cursor: pointer; aspect-ratio: 16 / 9; background: #0e0b12; box-shadow: 0 30px 60px -30px rgba(0,0,0,.45); }
+.video-facade img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s ease; }
+.video-facade:hover img { transform: scale(1.02); }
+.video-facade .play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 84px; height: 84px; border-radius: 50%; display: grid; place-items: center; background: var(--accent); color: var(--accent-ink); box-shadow: 0 12px 30px -8px rgba(0,0,0,.5); transition: transform .15s ease; }
+.video-facade .play svg { margin-left: 4px; }
+.video-facade:hover .play { transform: translate(-50%, -50%) scale(1.07); }
+.video-facade:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.video-facade iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+@media (max-width: 600px) { .video-facade { border-radius: 14px; } .video-facade .play { width: 64px; height: 64px; } }
