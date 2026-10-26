@@ -27,5 +27,5 @@ rm -rf "$DEST/$APP"
 ditto "$MNT/$APP" "$DEST/$APP"
 xattr -dr com.apple.quarantine "$DEST/$APP" 2>/dev/null || true
 
-open "$DEST/$APP"
+sleep 1; open "$DEST/$APP" 2>/dev/null || { sleep 2; open "$DEST/$APP"; }
 echo "✓ Mac Mirror is installed in $DEST and running. Look for the mirror on the right edge of your screen."
